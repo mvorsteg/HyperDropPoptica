@@ -9,7 +9,8 @@ public class PlayerManager : MonoBehaviour
     {
         for (int i = 0; i < players.Length; i++)
         {
-            players[i].SetActive(false);
+            if (players[i].gameObject.activeSelf)
+                players[i].SetActive(false);
         }
         players[0].SetActive(true);
     } 

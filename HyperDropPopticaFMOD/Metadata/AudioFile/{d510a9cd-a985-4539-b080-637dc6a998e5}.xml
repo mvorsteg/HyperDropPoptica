@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{d510a9cd-a985-4539-b080-637dc6a998e5}">
+		<property name="assetPath">
+			<value>HyperDropPoptica_6.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>183</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{51acdddc-50fd-4a8f-ab91-a4dd8b8d8193}</destination>
+		</relationship>
+	</object>
+</objects>

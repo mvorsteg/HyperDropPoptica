@@ -5,6 +5,8 @@ public class SimpleTurret : MonoBehaviour
 {
     public GameObject turretProjectile;
     public float projectileSpeed = 50;
+    public bool followBeats = true;
+    public bool followMarkers = true;
     private Rigidbody2D rb;
     private int health;
     private TurretInstruction[] instructions;
@@ -17,13 +19,28 @@ public class SimpleTurret : MonoBehaviour
         instructions = instructs;
     }
 
-    // Called on every beat
+    // Called on every beat (if followBeats is true and Beater.beatEvents == true)
     public void PerformBeat()
     {
-        TurretInstruction currInst = instructions[instructNum];
-        InstantRotate(currInst.rotation);
-        FireProjectile(currInst.numProjectiles, currInst.spread, currInst.spreadOffset);
-        instructNum = (instructNum + 1) % instructions.Length;
+        if (followBeats)
+        {
+            TurretInstruction currInst = instructions[instructNum];
+            InstantRotate(currInst.rotation);
+            FireProjectile(currInst.numProjectiles, currInst.spread, currInst.spreadOffset);
+            instructNum = (instructNum + 1) % instructions.Length;
+        }
+    }
+
+    // Called on every marker (if followBeats is true and Beater.markerEvents == true)
+    public void PerformMarker()
+    {
+        if (followMarkers)
+        {
+            TurretInstruction currInst = instructions[instructNum];
+            InstantRotate(currInst.rotation);
+            FireProjectile(currInst.numProjectiles, currInst.spread, currInst.spreadOffset);
+            instructNum = (instructNum + 1) % instructions.Length;
+        }
     }
 
 

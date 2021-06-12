@@ -141,14 +141,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &519420029
-AudioListener:
+--- !u!114 &519420029
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+  ListenerNumber: -1
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -347,6 +353,7 @@ GameObject:
   m_Component:
   - component: {fileID: 817774971}
   - component: {fileID: 817774970}
+  - component: {fileID: 817774972}
   m_Layer: 0
   m_Name: BeatBois
   m_TagString: Untagged
@@ -366,7 +373,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d764cf16a6d7fcb4383247cc54e839c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bpm: 135
+  beatEvents: 0
+  markerEvents: 1
 --- !u!4 &817774971
 Transform:
   m_ObjectHideFlags: 0
@@ -383,6 +391,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &817774972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817774969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d252ba69f24dc04785e40b441c84f6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &921676223
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,6 +492,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 817774971}
     m_Modifications:
+    - target: {fileID: 4823169822199453081, guid: 189eae5304566c5459bbff24dc8fa053, type: 3}
+      propertyPath: followBeats
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4823169822199453081, guid: 189eae5304566c5459bbff24dc8fa053, type: 3}
+      propertyPath: followMarkers
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4823169822199453083, guid: 189eae5304566c5459bbff24dc8fa053, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1084,6 +1112,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 817774971}
     m_Modifications:
+    - target: {fileID: 4823169822199453081, guid: 189eae5304566c5459bbff24dc8fa053, type: 3}
+      propertyPath: followBeats
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4823169822199453081, guid: 189eae5304566c5459bbff24dc8fa053, type: 3}
+      propertyPath: followMarkers
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4823169822199453083, guid: 189eae5304566c5459bbff24dc8fa053, type: 3}
       propertyPath: m_RootOrder
       value: 0

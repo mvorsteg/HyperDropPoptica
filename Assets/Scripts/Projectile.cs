@@ -4,6 +4,7 @@ using System.Collections;
 public class Projectile : MonoBehaviour
 {
     public float stopThreshold = 0.01f;
+    public float minTravelTime = 0f;
     private Rigidbody2D rb;
 
     private void Awake()
@@ -19,13 +20,21 @@ public class Projectile : MonoBehaviour
         rb.velocity = Vector2.zero;
         rb.AddForce(force * angle);
 
-    // figure out why velocity doesnt get updated at all
-        while (rb.velocity.magnitude > stopThreshold)
+        float elapsedTime = 0;
+        while (rb.velocity.magnitude > stopThreshold || elapsedTime <= minTravelTime)
         {
-            Debug.Log(rb.velocity.magnitude);
+            elapsedTime += Time.deltaTime;
             yield return null;
         }
-
         gameObject.layer = LayerMask.NameToLayer("Default");
     }    
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        Player p = other.transform.GetComponent<Player>();
+        if (p != null)
+        {
+            p.PickUpProjectile();
+        }
+    }
 }

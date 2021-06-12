@@ -28,12 +28,18 @@ public class Player : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    public void TakeDamage(float amount)
     {
-        if (other.gameObject.tag == "Projectile")
+        currHealth = Mathf.Max(0, currHealth - amount);
+        if (currHealth <= 0)
         {
-            PickUpProjectile();
-        }    
+            Die();
+        }
+    }
+
+    public void Die()
+    {
+        SetActive(false);
     }
 
     public void SetActive(bool active)

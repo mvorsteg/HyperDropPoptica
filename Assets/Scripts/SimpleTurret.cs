@@ -41,9 +41,9 @@ public class SimpleTurret : MonoBehaviour
         Please note that this will be relative to the turret's current rotation.
         
         Example - Shooting in four directions due north, due south, due east, due west:
-        FireProjectile(4, 360, 0)
+        FireProjectile(4, 270, 45)
         Example - Shooting in four directions northeast, southeast, southwest, northwest:
-        FireProjectile(4, 360, 45)
+        FireProjectile(4, 270, 0)
     */
     private void FireProjectile(int numProjectiles, float spread, float spreadOffset)
     {

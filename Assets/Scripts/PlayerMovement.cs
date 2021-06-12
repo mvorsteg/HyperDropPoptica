@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public GameObject cursor;
+    public Animator animator;
+    public SpriteRenderer spriteRenderer;
 
     public float speed = 5f;
     public bool isActive;
@@ -17,8 +19,10 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-       rb = GetComponent<Rigidbody2D>(); 
-       player = GetComponent<Player>();
+        rb = GetComponent<Rigidbody2D>(); 
+        player = GetComponent<Player>();
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -29,6 +33,28 @@ public class PlayerMovement : MonoBehaviour
         {
             movement.x = Input.GetAxis("Horizontal");
             movement.y = Input.GetAxis("Vertical");
+
+            if(movement.x > 0)
+            {
+                animator.SetBool("Run", true);
+                spriteRenderer.flipX = true;
+            }
+
+            if (movement.x < 0)
+            {
+                animator.SetBool("Run", true);
+                spriteRenderer.flipX = false;
+            }
+            
+            if (movement.y != 0)
+            {
+                animator.SetBool("Run", true);
+            }
+
+            if ((movement.x == 0) && (movement.y == 0))
+            {
+                animator.SetBool("Run", false);
+            }
 
             // aiming
             Vector3 pos = Camera.main.WorldToScreenPoint(transform.position);

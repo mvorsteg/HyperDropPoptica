@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    public float maxHealth = 100;
-    private float currHealth;
+    public int maxHealth = 5;
+    private int currHealth;
+    public HealthBar healthBar;
 
     private bool isActive;
     private bool canThrow = true;
@@ -28,9 +30,10 @@ public class Player : MonoBehaviour
         
     }
 
-    public void TakeDamage(float amount)
+    public void TakeDamage(int amount)
     {
-        currHealth = Mathf.Max(0, currHealth - amount);
+        currHealth = currHealth - amount;
+        healthBar.SetHealth(currHealth);
         if (currHealth <= 0)
         {
             Die();

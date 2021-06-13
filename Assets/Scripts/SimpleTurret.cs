@@ -22,7 +22,7 @@ public class SimpleTurret : MonoBehaviour
     // Called on every beat (if followBeats is true and Beater.beatEvents == true)
     public void PerformBeat()
     {
-        if (followBeats)
+        if (followBeats && instructions != null)
         {
             TurretInstruction currInst = instructions[instructNum];
             InstantRotate(currInst.rotation);
@@ -34,7 +34,7 @@ public class SimpleTurret : MonoBehaviour
     // Called on every marker (if followBeats is true and Beater.markerEvents == true)
     public void PerformMarker()
     {
-        if (followMarkers)
+        if (followMarkers && instructions != null)
         {
             TurretInstruction currInst = instructions[instructNum];
             InstantRotate(currInst.rotation);

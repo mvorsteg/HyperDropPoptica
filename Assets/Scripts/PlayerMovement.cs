@@ -43,7 +43,6 @@ public class PlayerMovement : MonoBehaviour
             if (movement.x < 0)
             {
                 animator.SetBool("Run", true);
-                spriteRenderer.flipX = false;
             }
             
             if (movement.y != 0)
@@ -62,6 +61,14 @@ public class PlayerMovement : MonoBehaviour
             float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
             //Debug.Log(angle * Mathf.Deg2Rad);
             cursor.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward); 
+            if (angle <= 90 && angle > -90)
+            {
+                spriteRenderer.flipX = true;
+            }
+            else
+            {
+                spriteRenderer.flipX = false;
+            }
 
             // projectile
             if (Input.GetKeyDown(KeyCode.Mouse0))

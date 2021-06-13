@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>(); 
+        rb = transform.parent.GetComponent<Rigidbody2D>(); 
         player = GetComponent<Player>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -87,5 +87,12 @@ public class PlayerMovement : MonoBehaviour
     {
         // Movement
         rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
+    }
+
+    public void SetPosition(Vector3 pos)
+    {
+        rb.velocity = Vector2.zero;
+        rb.MovePosition(new Vector2(pos.x, pos.y));
+        //transform.position = pos;
     }
 }

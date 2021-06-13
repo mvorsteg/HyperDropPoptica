@@ -17,6 +17,9 @@ public class Player : MonoBehaviour
     private Animator animator;
     private SpriteRenderer spriteRenderer;
 
+    public GameObject winMessage;
+    public GameObject loseMessage;
+
     private void Awake()
     {
         playerMovement = GetComponent<PlayerMovement>();
@@ -47,6 +50,7 @@ public class Player : MonoBehaviour
     public void Die()
     {
         SetActive(false);
+        loseMessage.SetActive(true);
     }
 
     public void SetActive(bool active)

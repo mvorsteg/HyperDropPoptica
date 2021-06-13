@@ -38,5 +38,15 @@ public class Projectile : MonoBehaviour
         {
             p.PickUpProjectile();
         }
+        SimpleTurret t = other.transform.GetComponent<SimpleTurret>();
+        if (t != null)
+        {
+            Destroy(t.gameObject);
+        }
+        TurretProjectile tp = other.transform.GetComponent<TurretProjectile>();
+        if (tp != null)
+        {
+            Destroy(tp.gameObject);
+        }
     }
 }

@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     public HealthBar healthBar;
 
     private bool isActive;
-    private bool canThrow = true;
+    public bool canThrow = true;
 
     public Projectile projectile;
     public float force = 10f;
@@ -55,6 +55,11 @@ public class Player : MonoBehaviour
         playerMovement.isActive = active;
     }   
 
+    public void SetPosition(Vector3 pos)
+    {
+        playerMovement.SetPosition(pos);
+    }
+
     public void ThrowProjectile(float angle)
     {
         if (canThrow)
@@ -64,6 +69,7 @@ public class Player : MonoBehaviour
             Vector2 dir = new Vector2(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad));
             
             projectile.gameObject.SetActive(true);
+            projectile.transform.position = new Vector3(100, 0, 0);
             projectile.StartCoroutine(projectile.Throw(dir, force, transform.position));
         }
     }

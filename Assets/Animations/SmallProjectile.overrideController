@@ -7,5 +7,7 @@ AnimatorOverrideController:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: SmallProjectile
-  m_Controller: {fileID: 0}
-  m_Clips: []
+  m_Controller: {fileID: 9100000, guid: a1f6f190fc8c7ef48b3edde538eaa471, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: e416b032760eac943b3ab5d80fa74fbb, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 03fe415c41cf43645a1a5bab4cdd8bc4, type: 2}

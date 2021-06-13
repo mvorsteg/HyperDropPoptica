@@ -21,6 +21,12 @@ public class TurretController : MonoBehaviour
             instructs[i].spread = float.Parse(currInstruct[2]);
             instructs[i].spreadOffset = float.Parse(currInstruct[3]);
         }
+        StartCoroutine(TurretStarter());
+    }
+
+    private IEnumerator TurretStarter()
+    {
+        yield return new WaitUntil(() => Camera.main.transform.position.y + 6 >= transform.position.y);
         GetComponent<SimpleTurret>().BeginTurret(instructs);
     }
 

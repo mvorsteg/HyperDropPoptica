@@ -101,6 +101,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turretProjectile: {fileID: 3023641565965835036, guid: af8702f365b344f4bb2ce91ff77d6e50, type: 3}
   projectileSpeed: 2.5
+  followBeats: 1
+  followMarkers: 1
 --- !u!114 &4823169822199453086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,7 +136,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 3
 --- !u!61 &8031274808776557405
 BoxCollider2D:
   m_ObjectHideFlags: 0

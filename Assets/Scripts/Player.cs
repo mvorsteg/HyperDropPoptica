@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
 
     public GameObject winMessage;
     public GameObject loseMessage;
+    public Beater beater;
 
     private void Awake()
     {
@@ -51,6 +52,7 @@ public class Player : MonoBehaviour
     {
         SetActive(false);
         loseMessage.SetActive(true);
+        beater.StopMusic();
     }
 
     public void SetActive(bool active)

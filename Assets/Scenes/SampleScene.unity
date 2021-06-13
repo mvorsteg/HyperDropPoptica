@@ -603,14 +603,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &519420029
-AudioListener:
+--- !u!114 &519420029
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+  ListenerNumber: -1
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -1153,6 +1159,7 @@ GameObject:
   m_Component:
   - component: {fileID: 817774971}
   - component: {fileID: 817774970}
+  - component: {fileID: 817774972}
   m_Layer: 0
   m_Name: BeatBois
   m_TagString: Untagged
@@ -1172,7 +1179,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d764cf16a6d7fcb4383247cc54e839c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bpm: 135
+  beatEvents: 1
+  markerEvents: 1
 --- !u!4 &817774971
 Transform:
   m_ObjectHideFlags: 0
@@ -1190,6 +1198,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &817774972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817774969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d252ba69f24dc04785e40b441c84f6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &921676223
 GameObject:
   m_ObjectHideFlags: 0
@@ -2009,7 +2029,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.68, y: 2.6}
+    oldSize: {x: 0.64, y: 0.8}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

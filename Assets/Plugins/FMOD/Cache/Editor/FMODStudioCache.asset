@@ -34,7 +34,7 @@ MonoBehaviour:
   Path: HyperDropPopticaFMOD/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 637591870300232554
+  lastModified: 637591880893262086
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -53,7 +53,7 @@ MonoBehaviour:
   Path: HyperDropPopticaFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637591870300037461
+  lastModified: 637591880892772043
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -128,7 +128,7 @@ MonoBehaviour:
   - {fileID: 3570475535787465142}
   StringsBanks:
   - {fileID: -6549211116143855374}
-  stringsBankWriteTime: 637591870300037461
+  stringsBankWriteTime: 637591880892772043
   cacheVersion: 6
 --- !u!114 &3570475535787465142
 MonoBehaviour:
@@ -145,7 +145,7 @@ MonoBehaviour:
   Path: HyperDropPopticaFMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637591870300027724
+  lastModified: 637591880892762078
   LoadResult: 0
   FileSizes: []
   Exists: 1

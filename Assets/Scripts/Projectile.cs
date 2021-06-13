@@ -15,6 +15,8 @@ public class Projectile : MonoBehaviour
 
     public IEnumerator Throw(Vector2 angle, float force, Vector3 startingPosition)
     {
+        yield return new WaitForSeconds(0.4f);
+        
         gameObject.layer = LayerMask.NameToLayer("PlayerProjectile");
         transform.position = startingPosition;
         rb.velocity = Vector2.zero;
@@ -31,7 +33,7 @@ public class Projectile : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        Player p = other.transform.GetComponent<Player>();
+        Player p = other.transform.GetComponentInChildren<Player>();
         if (p != null)
         {
             p.PickUpProjectile();

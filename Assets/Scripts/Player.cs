@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    public float maxHealth = 100;
-    private float currHealth;
+    public int maxHealth = 5;
+    private int currHealth;
+    public HealthBar healthBar;
 
     private bool isActive;
     private bool canThrow = true;
@@ -12,10 +14,14 @@ public class Player : MonoBehaviour
     public float force = 10f;
 
     private PlayerMovement playerMovement;
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
 
     private void Awake()
     {
         playerMovement = GetComponent<PlayerMovement>();
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void Start()
@@ -28,12 +34,19 @@ public class Player : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    public void TakeDamage(int amount)
     {
-        if (other.gameObject.tag == "Projectile")
+        currHealth = currHealth - amount;
+        healthBar.SetHealth(currHealth);
+        if (currHealth <= 0)
         {
-            PickUpProjectile();
-        }    
+            Die();
+        }
+    }
+
+    public void Die()
+    {
+        SetActive(false);
     }
 
     public void SetActive(bool active)
@@ -47,6 +60,7 @@ public class Player : MonoBehaviour
         if (canThrow)
         {
             canThrow = false;
+            animator.SetTrigger("Throw");
             Vector2 dir = new Vector2(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad));
             
             projectile.gameObject.SetActive(true);
@@ -57,6 +71,7 @@ public class Player : MonoBehaviour
     public void PickUpProjectile()
     {
         projectile.gameObject.SetActive(false);
+        animator.SetTrigger("Pickup");
         canThrow = true;
     }
 }

@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public GameObject cursor;
+    public Animator animator;
+    public SpriteRenderer spriteRenderer;
 
     public float speed = 5f;
     public bool isActive;
@@ -17,8 +19,10 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-       rb = GetComponent<Rigidbody2D>(); 
-       player = GetComponent<Player>();
+        rb = GetComponent<Rigidbody2D>(); 
+        player = GetComponent<Player>();
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -30,12 +34,41 @@ public class PlayerMovement : MonoBehaviour
             movement.x = Input.GetAxis("Horizontal");
             movement.y = Input.GetAxis("Vertical");
 
+            if(movement.x > 0)
+            {
+                animator.SetBool("Run", true);
+                spriteRenderer.flipX = true;
+            }
+
+            if (movement.x < 0)
+            {
+                animator.SetBool("Run", true);
+            }
+            
+            if (movement.y != 0)
+            {
+                animator.SetBool("Run", true);
+            }
+
+            if ((movement.x == 0) && (movement.y == 0))
+            {
+                animator.SetBool("Run", false);
+            }
+
             // aiming
             Vector3 pos = Camera.main.WorldToScreenPoint(transform.position);
             Vector3 dir = Input.mousePosition - pos;
             float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
             //Debug.Log(angle * Mathf.Deg2Rad);
             cursor.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward); 
+            if (angle <= 90 && angle > -90)
+            {
+                spriteRenderer.flipX = true;
+            }
+            else
+            {
+                spriteRenderer.flipX = false;
+            }
 
             // projectile
             if (Input.GetKeyDown(KeyCode.Mouse0))

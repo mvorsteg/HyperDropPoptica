@@ -14,10 +14,14 @@ public class Player : MonoBehaviour
     public float force = 10f;
 
     private PlayerMovement playerMovement;
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
 
     private void Awake()
     {
         playerMovement = GetComponent<PlayerMovement>();
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void Start()
@@ -56,6 +60,7 @@ public class Player : MonoBehaviour
         if (canThrow)
         {
             canThrow = false;
+            animator.SetTrigger("Throw");
             Vector2 dir = new Vector2(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad));
             
             projectile.gameObject.SetActive(true);
@@ -66,6 +71,7 @@ public class Player : MonoBehaviour
     public void PickUpProjectile()
     {
         projectile.gameObject.SetActive(false);
+        animator.SetTrigger("Pickup");
         canThrow = true;
     }
 }

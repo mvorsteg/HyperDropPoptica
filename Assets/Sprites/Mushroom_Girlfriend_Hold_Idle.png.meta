@@ -1,19 +1,28 @@
 fileFormatVersion: 2
-guid: 15b108eb171c3ce40885cc07c22cd3ea
+guid: 70aa2d91e6bb3b04ea461e6402acb3aa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1228214962336018243
-    second: Mushroom_Girlfriend_Run_WIP_Like_this_one_is_really_bad_0
+      213: -2889674798090077695
+    second: Mushroom_Girlfriend_Hold_Idle_0
   - first:
-      213: -653415391345200805
-    second: Mushroom_Girlfriend_Run_WIP_Like_this_one_is_really_bad_1
+      213: -6440701543468589377
+    second: Mushroom_Girlfriend_Hold_Idle_1
   - first:
-      213: -758136376693689995
-    second: Mushroom_Girlfriend_Run_WIP_Like_this_one_is_really_bad_2
+      213: -3942096579845757173
+    second: Mushroom_Girlfriend_Hold_Idle_2
   - first:
-      213: -7767579638869170021
-    second: Mushroom_Girlfriend_Run_WIP_Like_this_one_is_really_bad_3
+      213: 974109395481035612
+    second: Mushroom_Girlfriend_Hold_Idle_3
+  - first:
+      213: 6648551569132012414
+    second: Mushroom_Girlfriend_Hold_Idle_4
+  - first:
+      213: -6564606538519156004
+    second: Mushroom_Girlfriend_Hold_Idle_5
+  - first:
+      213: -7482695395849879975
+    second: Mushroom_Girlfriend_Hold_Idle_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -103,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mushroom_Girlfriend_Run_WIP_Like_this_one_is_really_bad_0
+      name: Mushroom_Girlfriend_Hold_Idle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,20 +126,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db05426cff084fee0800000000000000
-      internalID: -1228214962336018243
+      spriteID: 10a317fc410d5e7d0800000000000000
+      internalID: -2889674798090077695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mushroom_Girlfriend_Run_WIP_Like_this_one_is_really_bad_1
+      name: Mushroom_Girlfriend_Hold_Idle_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 80
         y: 0
-        width: 64
-        height: 64
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,20 +147,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b51b81cd92a9ee6f0800000000000000
-      internalID: -653415391345200805
+      spriteID: fbe9e3d02180e96a0800000000000000
+      internalID: -6440701543468589377
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mushroom_Girlfriend_Run_WIP_Like_this_one_is_really_bad_2
+      name: Mushroom_Girlfriend_Hold_Idle_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 160
         y: 0
-        width: 64
-        height: 64
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 571fedf6bfe8a75f0800000000000000
-      internalID: -758136376693689995
+      spriteID: b07e208fb0cda49c0800000000000000
+      internalID: -3942096579845757173
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mushroom_Girlfriend_Run_WIP_Like_this_one_is_really_bad_3
+      name: Mushroom_Girlfriend_Hold_Idle_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 240
         y: 0
-        width: 64
-        height: 64
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,8 +189,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9865ac0973043490800000000000000
-      internalID: -7767579638869170021
+      spriteID: c53840a855bb48d00800000000000000
+      internalID: 974109395481035612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Girlfriend_Hold_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e73caf43d66644c50800000000000000
+      internalID: 6648551569132012414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Girlfriend_Hold_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdaeb5d4225d5e4a0800000000000000
+      internalID: -6564606538519156004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Girlfriend_Hold_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95ebae7be20282890800000000000000
+      internalID: -7482695395849879975
       vertices: []
       indices: 
       edges: []

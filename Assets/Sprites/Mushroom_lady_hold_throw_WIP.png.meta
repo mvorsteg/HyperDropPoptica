@@ -1,19 +1,28 @@
 fileFormatVersion: 2
-guid: 15b108eb171c3ce40885cc07c22cd3ea
+guid: e8d74d8c83aecd8479e1447d06b64f4f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1228214962336018243
-    second: Mushroom_Girlfriend_Run_WIP_Like_this_one_is_really_bad_0
+      213: 3593661958724221003
+    second: Mushroom_lady_hold_throw_WIP_0
   - first:
-      213: -653415391345200805
-    second: Mushroom_Girlfriend_Run_WIP_Like_this_one_is_really_bad_1
+      213: 4133491064602038251
+    second: Mushroom_lady_hold_throw_WIP_1
   - first:
-      213: -758136376693689995
-    second: Mushroom_Girlfriend_Run_WIP_Like_this_one_is_really_bad_2
+      213: 6030975947538924867
+    second: Mushroom_lady_hold_throw_WIP_2
   - first:
-      213: -7767579638869170021
-    second: Mushroom_Girlfriend_Run_WIP_Like_this_one_is_really_bad_3
+      213: -8665932510277541982
+    second: Mushroom_lady_hold_throw_WIP_3
+  - first:
+      213: -8692714000682075413
+    second: Mushroom_lady_hold_throw_WIP_4
+  - first:
+      213: -2553536985724946222
+    second: Mushroom_lady_hold_throw_WIP_5
+  - first:
+      213: 174768346108462716
+    second: Mushroom_lady_hold_throw_WIP_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -103,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mushroom_Girlfriend_Run_WIP_Like_this_one_is_really_bad_0
+      name: Mushroom_lady_hold_throw_WIP_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 160
+        height: 108
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,20 +126,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db05426cff084fee0800000000000000
-      internalID: -1228214962336018243
+      spriteID: b48779ce2804fd130800000000000000
+      internalID: 3593661958724221003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mushroom_Girlfriend_Run_WIP_Like_this_one_is_really_bad_1
+      name: Mushroom_lady_hold_throw_WIP_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 160
         y: 0
-        width: 64
-        height: 64
+        width: 160
+        height: 108
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,20 +147,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b51b81cd92a9ee6f0800000000000000
-      internalID: -653415391345200805
+      spriteID: bef0bdb193c1d5930800000000000000
+      internalID: 4133491064602038251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mushroom_Girlfriend_Run_WIP_Like_this_one_is_really_bad_2
+      name: Mushroom_lady_hold_throw_WIP_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 320
         y: 0
-        width: 64
-        height: 64
+        width: 160
+        height: 108
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 571fedf6bfe8a75f0800000000000000
-      internalID: -758136376693689995
+      spriteID: 3458bf9bba452b350800000000000000
+      internalID: 6030975947538924867
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mushroom_Girlfriend_Run_WIP_Like_this_one_is_really_bad_3
+      name: Mushroom_lady_hold_throw_WIP_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 480
         y: 0
-        width: 64
-        height: 64
+        width: 160
+        height: 108
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,8 +189,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9865ac0973043490800000000000000
-      internalID: -7767579638869170021
+      spriteID: 2afd565cb4c6cb780800000000000000
+      internalID: -8665932510277541982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_lady_hold_throw_WIP_4
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 160
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beab74f1ca64d5780800000000000000
+      internalID: -8692714000682075413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_lady_hold_throw_WIP_5
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 160
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8fa0504a3009cd0800000000000000
+      internalID: -2553536985724946222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_lady_hold_throw_WIP_6
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 160
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7607c382e6ec6200800000000000000
+      internalID: 174768346108462716
       vertices: []
       indices: 
       edges: []

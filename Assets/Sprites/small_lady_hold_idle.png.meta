@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: 15b108eb171c3ce40885cc07c22cd3ea
+guid: 6e58135b540a194488c13dfc749cd2fe
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1228214962336018243
-    second: Mushroom_Girlfriend_Run_WIP_Like_this_one_is_really_bad_0
+      213: -372835660431580333
+    second: small_lady_hold_idle_0
   - first:
-      213: -653415391345200805
-    second: Mushroom_Girlfriend_Run_WIP_Like_this_one_is_really_bad_1
+      213: 2506355906002474932
+    second: small_lady_hold_idle_1
   - first:
-      213: -758136376693689995
-    second: Mushroom_Girlfriend_Run_WIP_Like_this_one_is_really_bad_2
+      213: -2040345836161261386
+    second: small_lady_hold_idle_2
   - first:
-      213: -7767579638869170021
-    second: Mushroom_Girlfriend_Run_WIP_Like_this_one_is_really_bad_3
+      213: -7315813536161860375
+    second: small_lady_hold_idle_3
+  - first:
+      213: -9068183548045567918
+    second: small_lady_hold_idle_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -103,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mushroom_Girlfriend_Run_WIP_Like_this_one_is_really_bad_0
+      name: small_lady_hold_idle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 84
+        height: 108
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,20 +120,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db05426cff084fee0800000000000000
-      internalID: -1228214962336018243
+      spriteID: 353a06431fb63daf0800000000000000
+      internalID: -372835660431580333
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mushroom_Girlfriend_Run_WIP_Like_this_one_is_really_bad_1
+      name: small_lady_hold_idle_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 84
         y: 0
-        width: 64
-        height: 64
+        width: 84
+        height: 108
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,20 +141,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b51b81cd92a9ee6f0800000000000000
-      internalID: -653415391345200805
+      spriteID: 4b7daf1da6d58c220800000000000000
+      internalID: 2506355906002474932
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mushroom_Girlfriend_Run_WIP_Like_this_one_is_really_bad_2
+      name: small_lady_hold_idle_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 168
         y: 0
-        width: 64
-        height: 64
+        width: 84
+        height: 108
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 571fedf6bfe8a75f0800000000000000
-      internalID: -758136376693689995
+      spriteID: 6b029a0b54c3fa3e0800000000000000
+      internalID: -2040345836161261386
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mushroom_Girlfriend_Run_WIP_Like_this_one_is_really_bad_3
+      name: small_lady_hold_idle_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 252
         y: 0
-        width: 64
-        height: 64
+        width: 84
+        height: 108
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,8 +183,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9865ac0973043490800000000000000
-      internalID: -7767579638869170021
+      spriteID: 9e4f3168952097a90800000000000000
+      internalID: -7315813536161860375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small_lady_hold_idle_4
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 84
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258d3bcbb17572280800000000000000
+      internalID: -9068183548045567918
       vertices: []
       indices: 
       edges: []

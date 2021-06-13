@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 15b108eb171c3ce40885cc07c22cd3ea
+guid: d19f69632d5b4194b8c015916916b504
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1228214962336018243
-    second: Mushroom_Girlfriend_Run_WIP_Like_this_one_is_really_bad_0
+      213: 3389569366614452421
+    second: Mushroom_Lady_Ball_WIP_0
   - first:
-      213: -653415391345200805
-    second: Mushroom_Girlfriend_Run_WIP_Like_this_one_is_really_bad_1
+      213: -1801851926859850814
+    second: Mushroom_Lady_Ball_WIP_1
   - first:
-      213: -758136376693689995
-    second: Mushroom_Girlfriend_Run_WIP_Like_this_one_is_really_bad_2
+      213: -3574047549070630605
+    second: Mushroom_Lady_Ball_WIP_2
   - first:
-      213: -7767579638869170021
-    second: Mushroom_Girlfriend_Run_WIP_Like_this_one_is_really_bad_3
+      213: -5836585145179773147
+    second: Mushroom_Lady_Ball_WIP_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -103,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mushroom_Girlfriend_Run_WIP_Like_this_one_is_really_bad_0
+      name: Mushroom_Lady_Ball_WIP_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 40
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,20 +117,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db05426cff084fee0800000000000000
-      internalID: -1228214962336018243
+      spriteID: 5c8a996516b2a0f20800000000000000
+      internalID: 3389569366614452421
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mushroom_Girlfriend_Run_WIP_Like_this_one_is_really_bad_1
+      name: Mushroom_Lady_Ball_WIP_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 40
         y: 0
-        width: 64
-        height: 64
+        width: 40
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,20 +138,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b51b81cd92a9ee6f0800000000000000
-      internalID: -653415391345200805
+      spriteID: 2cb5aa918398ef6e0800000000000000
+      internalID: -1801851926859850814
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mushroom_Girlfriend_Run_WIP_Like_this_one_is_really_bad_2
+      name: Mushroom_Lady_Ball_WIP_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 80
         y: 0
-        width: 64
-        height: 64
+        width: 40
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 571fedf6bfe8a75f0800000000000000
-      internalID: -758136376693689995
+      spriteID: 3312a43b0be666ec0800000000000000
+      internalID: -3574047549070630605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mushroom_Girlfriend_Run_WIP_Like_this_one_is_really_bad_3
+      name: Mushroom_Lady_Ball_WIP_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 120
         y: 0
-        width: 64
-        height: 64
+        width: 40
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,8 +180,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9865ac0973043490800000000000000
-      internalID: -7767579638869170021
+      spriteID: 527ec38ebb8400fa0800000000000000
+      internalID: -5836585145179773147
       vertices: []
       indices: 
       edges: []
